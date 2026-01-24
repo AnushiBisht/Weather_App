@@ -1,0 +1,70 @@
+body{
+    background-color: #BBE0EF;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #30364F;
+}
+
+h1{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 340px;
+  min-height: 480px; 
+  margin: 40px auto;
+  padding: 24px 22px;
+
+  background-color: #E3F2FD;
+  border-radius: 14px;   
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12);
+}
+
+.search-box {
+  width: 75%;
+  margin-bottom: 25px;
+}
+
+.search-bar {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 10px;    
+  border: none;
+  font-size: 1rem;
+}
+
+.weather-box {
+  margin-top: auto;        
+  margin-bottom: 40px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.location {
+  font-size: 1.15rem;
+  font-weight: 600;
+}
+
+.date {
+  font-size: 0.85rem;
+  opacity: 0.75;
+}
+
+.temp {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin: 10px 0;
+}
+
+.weather {
+  font-size: 1rem;
+  text-transform: capitalize;
+}
