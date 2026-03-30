@@ -17,16 +17,13 @@ function getWeather(city) {
     return;
   }
 
-  fetch(
-    `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${API_KEY}`
-  )
+  fetch(`/api/weather?city=${city}`)
     .then(response => response.json())
     .then(data => {
       if (data.cod !== 200) {
         alert("City not found");
         return;
       }
-
       displayWeather(data);
     })
     .catch(error => console.log(error));
